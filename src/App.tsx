@@ -1,6 +1,8 @@
-import GenerateFCMToken from "./components/GenerateFCMToken";
+// import { GenerateFCMToken } from "./components/GenerateFCMToken";
 // import { GenerateFCMToken } from "npm-component-package";
 // import { useFirebaseNotification } from "./hooks/useFirebaseNotification";
+
+import { GenerateFCMToken } from "push-reactor";
 
 function App() {
   const firebaseConfig = {
@@ -14,14 +16,6 @@ function App() {
   };
   const vapidKey =
     "BC2p1ft9yE8FIUJvUSOwTz4MMFZROoHEhPY0_83Dzfw9W7QvmOr4ueIYvB3fnXduzGkCfqLB6L0vX_p1DxV_Bw4";
-
-  // const { token: deviceToken, isLoading } = useFirebaseNotification({
-  //   firebaseConfig,
-  //   vapidKey,
-  // });
-
-  // console.log("token", deviceToken);
-  // console.log("isLoading", isLoading);
 
   return (
     <>

@@ -233,7 +233,7 @@ const requestNotificationPermission = async () => {
   }
 };
 
-const GenerateFCMToken: React.FC<GenerateFCMTokenProps> = ({
+export const GenerateFCMToken: React.FC<GenerateFCMTokenProps> = ({
   firebaseConfig,
   vapidKey,
   inAppNotification = false,
@@ -330,5 +330,3 @@ const GenerateFCMToken: React.FC<GenerateFCMTokenProps> = ({
 
   return null;
 };
-
-export default GenerateFCMToken;
